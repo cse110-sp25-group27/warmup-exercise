@@ -10,6 +10,7 @@
 
 ## Meeting Notes
 - [April 16](https://github.com/cse110-sp25-group27/cse110-sp25-group27/blob/main/admin/meetings/april_16.md)
+- [April 16 (TA Meeting)](https://github.com/cse110-sp25-group27/cse110-sp25-group27/blob/main/admin/meetings/april_16_TA.md)
 - [April 18](https://github.com/cse110-sp25-group27/cse110-sp25-group27/blob/main/admin/meetings/april_18.md)
 
 ## Instructions for reference
