@@ -6,7 +6,10 @@
 3. A simple game, either Solitaire or Black Jack Game, against an algorithmic dealer.  No multiplayer effort here or network work allowed.  The dealer may have a brain-dead, random, and correct mode for fun.  If you do BlackJack you need state for money to be tracked.    (the most JS)
 
 ## Plan of Action
-1. 
+1. Meeting in person (hackathon style)
+2. Looking at issues within repo
+3. **FINISH PART 1**, other tasks we probably won't get to
+4. Summarized in meeting notes.
 
 ## Meeting Notes
 - [April 16](https://github.com/cse110-sp25-group27/cse110-sp25-group27/blob/main/admin/meetings/april_16.md)
