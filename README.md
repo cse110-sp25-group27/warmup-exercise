@@ -8,8 +8,12 @@
 ## Plan of Action
 1. Meeting in person (hackathon style)
 2. Looking at issues within repo
-3. **FINISH PART 1**, other tasks we probably won't get to
-4. Summarized in meeting notes.
+   - Create an issue for each part you are addressing
+   - Use the templates for group you are in
+   - Write a brief description and goals
+   - Mark as finished once pushed
+4. **FINISH PART 1**, other tasks we probably won't get to
+5. Summarized in meeting notes.
 
 ## Meeting Notes
 - [April 16](https://github.com/cse110-sp25-group27/cse110-sp25-group27/blob/main/admin/meetings/april_16.md)
