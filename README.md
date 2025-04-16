@@ -9,8 +9,8 @@
 1. 
 
 ## Meeting Notes
-- [April 16]("https://github.com/cse110-sp25-group27/cse110-sp25-group27/blob/main/admin/meetings/april_16.md")
-- [April 18]("https://github.com/cse110-sp25-group27/cse110-sp25-group27/blob/main/admin/meetings/april_18.md")
+- [April 16](https://github.com/cse110-sp25-group27/cse110-sp25-group27/blob/main/admin/meetings/april_16.md)
+- [April 18](https://github.com/cse110-sp25-group27/cse110-sp25-group27/blob/main/admin/meetings/april_18.md)
 
 ## Instructions for reference
 You may not jump steps. You have to be able to do #1 properly before #2, and so on.  Your card and deck widgets should use standard HTML, CSS, and JavaScript and should not use libraries or frameworks, as they aren't needed.  Components will be built using Web Components which are built-in to browsers.   State management can be handled via the localStorage API for now.   You must also use GitHub to do this.  We must see multiple pushes to your repository and some uses of issues to allocate work.
