@@ -7,3 +7,28 @@
 
 ## Plan of Action
 1. 
+
+## Meeting Notes
+- [April 16]("admin/meetings/april_16.md")
+- [April 18]("admin/meetings/april_18.md")
+
+## Instructions for reference
+You may not jump steps. You have to be able to do #1 properly before #2, and so on.  Your card and deck widgets should use standard HTML, CSS, and JavaScript and should not use libraries or frameworks, as they aren't needed.  Components will be built using Web Components which are built-in to browsers.   State management can be handled via the localStorage API for now.   You must also use GitHub to do this.  We must see multiple pushes to your repository and some uses of issues to allocate work.
+
+The amount of polish and presentation in the warm-up is up to you; depending on how your efforts progress, you can make it much more visual with animations or even add in sounds or voice.  Most importantly, you should focus the most on code quality and other aspects of a well-engineered piece of code.  After your mini-sprint, you demonstrate your component(s) or app in a short video uploaded on YouTube (under 3 minutes), access to the working app for your TA mentor, and a SWOT analysis of your learnings from the exercise. 
+
+The expected outcomes of this exercise are:
+
+    Implementation of at least one of the steps. For this create a new repository in your Github Organization called warmup-exercise. 
+        NOTE: If you are attempting multiple widgets, keep them in separate folders in the repo mentioned above
+    Review of the process followed by a SWOT analysis (Strength, Weakness, Opportunity, Threat) on how it went on the aspects team, tech, and tool and a brief summary of your learning. 
+
+For the submission on GRADESCOPE, you need to submit a pdf containing:
+
+    Team number
+    Team name
+    Github Repo Link
+    Youtube Link
+    Full SWOT analysis
+
+Also upload this PDF in your main GitHub repository in the directory admin/adr
