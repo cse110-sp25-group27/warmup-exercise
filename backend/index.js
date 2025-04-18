@@ -25,41 +25,6 @@ function loadOrderedDeck() {
     }
 }
 
-/**
- * Shuffles an array of card image file paths, returns the shuffled cards
- * Assumes the cards are named "card1.png" to "card52.png" 
- * @returns {string[]} An array of shuffled card image paths.
- */
-function shuffleDeck() {
-    // shuffle using random key
-    for (let i = 0; i<cards.length; i++) {
-        // Pick a random index between 0 and i
-        let j = Math.floor(Math.random() * (i + 1));
-
-        // Swap elements at positions i and j
-        let temp = cards[i];
-        cards[i] = cards[j];
-        cards[j] = temp;
-    }
-    
-    // Return the shuffled array
-    return cards;
-}
-
-function shuffleElements(containerSelector, itemSelector) {
-    const container = document.querySelector(containerSelector);
-    const items = Array.from(container.querySelectorAll(itemSelector));
-  
-    // shuffle array in‑place
-    for (let i = items.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [items[i], items[j]] = [items[j], items[i]];
-    }
-  
-    // re‑append in shuffled order
-    items.forEach(el => container.appendChild(el));
-    return items;
-  }
 
 /**
  * Picks a random card from the cards folder where the cards are named "card1.png" to "card52.png"
