@@ -1,0 +1,151 @@
+/**
+     * Set up offsets for card images so they appear like a deck
+     */
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.card').forEach(card => {
+        const id = parseInt(card.id);
+        card.style.left = ((id) * 10) + 'px';
+        card.style.top = ((id) * 2) + 'px';
+        card.style.zIndex = 15 - id;
+    });
+});
+
+/**
+ * Global array holding the shuffled deck of cards
+ */
+let cards = [];
+
+/**
+ * Loads the deck with all 52 cards in order.
+ */
+function loadOrderedDeck() {
+    cards = [];
+    for (let i = 1; i <= 52; i++) {
+        cards.push("assets/cards/card" + i + ".png");
+    }
+}
+
+/**
+ * Shuffles an array of card image file paths, returns the shuffled cards
+ * Assumes the cards are named "card1.png" to "card52.png" 
+ * @returns {string[]} An array of shuffled card image paths.
+ */
+function shuffleDeck() {
+    // shuffle using random key
+    for (let i = 0; i<cards.length; i++) {
+        // Pick a random index between 0 and i
+        let j = Math.floor(Math.random() * (i + 1));
+
+        // Swap elements at positions i and j
+        let temp = cards[i];
+        cards[i] = cards[j];
+        cards[j] = temp;
+    }
+    
+    // Return the shuffled array
+    return cards;
+}
+
+function shuffleElements(containerSelector, itemSelector) {
+    const container = document.querySelector(containerSelector);
+    const items = Array.from(container.querySelectorAll(itemSelector));
+  
+    // shuffle array in‑place
+    for (let i = items.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [items[i], items[j]] = [items[j], items[i]];
+    }
+  
+    // re‑append in shuffled order
+    items.forEach(el => container.appendChild(el));
+    return items;
+  }
+
+/**
+ * Picks a random card from the cards folder where the cards are named "card1.png" to "card52.png"
+ * 
+ * @returns A randomly picked card
+ */
+function pickRandomCard() {
+    //Picks a random number from 1-52
+    let i = Math.floor(Math.random() * 52) 
+
+    // Returns the corresponding card
+    return "assets/cards/card" + i + ".png";
+}
+
+window.onload = () => {
+    loadOrderedDeck();  //load cards in order
+    shuffleDeck();       //shuffle them
+};
+
+document.getElementById('flip-button').addEventListener('click', () =>{
+    const topCard = document.querySelector('.top-card'); 
+    let isCurrentlyBack = topCard.src.includes("cardBack.png");
+    if(isCurrentlyBack){
+        topCard.src = cards[0]; 
+    } else{
+        topCard.src = "assets/cards/cardBack.png"; 
+    }
+})
+
+function flipCard() {
+    document.getElementById('flipCard').classList.toggle('flip');
+}
+
+function resetCards() {
+    document.querySelectorAll('.card').forEach(c => {
+      c.classList.remove('open', 'opened');
+    });
+    stackCards(0.2);
+    closeAllCards();
+    animateCards(0);
+}
+
+  function shuffleCards() {
+    // reorder the DOM
+    const tablecards = Array.from(document.querySelectorAll('.card'));
+  
+    let delay = 0;
+    const shufflePasses = 5;
+    let pass = 0;
+    let zIndexCounter = 1;
+  
+    // reverse order so top‑stacked cards animate first
+    tablecards.slice().reverse().forEach(card => {
+      if (pass++ > shufflePasses) return;
+  
+      setTimeout(() => {
+        // push it out…
+        card.style.marginRight = '145px';
+  
+        setTimeout(() => {
+          // bump its z‑index and pull it back
+          card.style.zIndex = zIndexCounter++;
+          card.style.marginLeft = '0px';
+        }, 100);
+  
+      }, delay);
+  
+      delay += 600;
+    });
+  
+  }
+
+  function stackCards() {
+    document.querySelectorAll('.card').forEach((card, i) => {
+      setTimeout(() => {
+        // reset to “stack” (no ani‑class)
+        card.className = 'card';
+      }, i * 150);
+    });
+  }
+  
+  function spreadCards() {
+    document.querySelectorAll('.card').forEach((card, i) => {
+      setTimeout(() => {
+        // give it the ani<i> position class
+        card.className = 'card ani' + i;
+      }, i * 150);
+    });
+  }
