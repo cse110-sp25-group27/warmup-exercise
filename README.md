@@ -1,5 +1,11 @@
 # warmup-exercise
 
+## Card info
+- JavaScript cards: 1 - 10
+- TypeScript cards: 11 - 20
+- HTML cards: 21 - 30
+- CSS cards: 31 - 40
+
 ## Goals
 1. Card Deck and Playing Card Web Components complete with animation of flip and/or shuffle (HTML, CSS, and very light JS)
 2. Dealing with the deck, complete with an ability to pull the cards one or multiple at a time and state management of the deck (more JS + some simple web APIs) 
