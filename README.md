@@ -7,7 +7,7 @@
 - CSS cards: 31 - 40
 
 ## SWOT Analysis
-- [Analysis Doc](https://docs.google.com/document/d/1_0r0rlfFNM68oc50wQrutVY4u7ARZH331dYEbNpLO-w/edit?usp=sharing)
+- [Analysis Doc](https://github.com/cse110-sp25-group27/cse110-sp25-group27/blob/main/admin/adr/SWOT_analysis.pdf)
 
 ## Goals
 1. Card Deck and Playing Card Web Components complete with animation of flip and/or shuffle (HTML, CSS, and very light JS)
