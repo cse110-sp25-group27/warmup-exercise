@@ -42,9 +42,9 @@ window.onload = () => {
 //})
 
 function flipCard() {
-    const i = Math.floor(Math.random() * 53) + 1;
+    let i = Math.floor(Math.random() * 53) + 1;
     //let image = "assets/cards/" + i + ".png";
-    const frontOfCard = document.getElementById('frontCard');
+    let frontOfCard = document.getElementById('frontCard');
     frontOfCard.src = `assets/cards/${i}.png`;
     document.getElementById('flipCard').classList.toggle('flip');
 }
