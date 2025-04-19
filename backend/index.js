@@ -21,7 +21,7 @@ let cards = [];
 function loadOrderedDeck() {
     cards = [];
     for (let i = 1; i <= 52; i++) {
-        cards.push("/frontend/assets/cards/card" + i + ".png");
+        cards.push("assets/cards/card" + i + ".png");
     }
 }
 
@@ -37,7 +37,7 @@ document.getElementById('flip-button').addEventListener('click', () =>{
     if(isCurrentlyBack){
         topCard.src = cards[0]; 
     } else{
-        topCard.src = "/frontend/assets/cards/cardBack.png"; 
+        topCard.src = "assets/cards/cardBack.png"; 
     }
 })
 
