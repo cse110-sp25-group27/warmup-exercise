@@ -42,7 +42,7 @@ document.getElementById('flip-button').addEventListener('click', () =>{
 })
 
 function flipCard() {
-    let i = Math.floor(Math.random() * 53);
+    let i = Math.floor(Math.random() * 52) + 1;
     let image = "./assets/cards/" + i + ".png";
     document.getElementById('cardss').src = image;
     document.getElementById('flipCard').classList.toggle('flip');
