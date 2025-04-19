@@ -31,15 +31,15 @@ window.onload = () => {
     shuffleDeck();       //shuffle them
 };
 
-document.getElementById('flip-button').addEventListener('click', () =>{
-    const topCard = document.querySelector('.top-card'); 
-    let isCurrentlyBack = topCard.src.includes("cardBack.png");
-    if(isCurrentlyBack){
-        topCard.src = cards[0]; 
-    } else{
-        topCard.src = "assets/cards/cardBack.png"; 
-    }
-})
+//document.getElementById('flip-button').addEventListener('click', () =>{
+    //const topCard = document.querySelector('.top-card'); 
+    //let isCurrentlyBack = topCard.src.includes("cardBack.png");
+    //if(isCurrentlyBack){
+        //topCard.src = cards[0]; 
+    //} else{
+        //topCard.src = "assets/cards/cardBack.png"; 
+    //}
+//})
 
 function flipCard() {
     const i = Math.floor(Math.random() * 53) + 1;
