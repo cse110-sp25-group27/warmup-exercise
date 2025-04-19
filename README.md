@@ -6,6 +6,9 @@
 - HTML cards: 21 - 30
 - CSS cards: 31 - 40
 
+## SWOT Analysis
+- [Analysis Doc](https://docs.google.com/document/d/1_0r0rlfFNM68oc50wQrutVY4u7ARZH331dYEbNpLO-w/edit?usp=sharing)
+
 ## Goals
 1. Card Deck and Playing Card Web Components complete with animation of flip and/or shuffle (HTML, CSS, and very light JS)
 2. Dealing with the deck, complete with an ability to pull the cards one or multiple at a time and state management of the deck (more JS + some simple web APIs) 
