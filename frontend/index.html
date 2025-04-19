@@ -20,7 +20,7 @@
                         <img src="./assets/cards/placehold-back.jpg" alt="Playing card" class="card" id="1"></img>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./assets/cards/plackholder_front.jpg"></img>
+                        <img id="cardss" alt="Playing card" class="card"></img>
                     </div>
                 </div>
             </div>
@@ -30,8 +30,24 @@
             <img src="./assets/cards/placehold-back.jpg" alt="Playing card" class="card" id="5"></img>
         </div>
         <div class="buttonContainer" id="buttons-container">
-            <button id="flip-button" onclick="flipCard()">Flip</button>
-            <button id="shuffle-button" onclick="spreadCards()">Shuffle</button>
+            <div id ="flip-label">
+                <button id="flip-button" onclick="flipCard()"></button>
+                <p>Flip</p>
+            </div>
+            <div id="display-label">
+                <a href="display.html">
+                  <button id="display-button"></button>
+                  <p>Display</p>
+                </a>
+            </div>
+        </div>
+        <div class ="stools">
+            <img src="assets/stool.png" alt="Stool" class="stool" id="stool1">
+            <img src="assets/stool.png" alt="Stool" class="stool" id="stool2">
+            <img src="assets/stool.png" alt="Stool" class="stool" id="stool3">
+            <img src="assets/stool.png" alt="Stool" class="stool" id="stool4">
+            <img src="assets/stool.png" alt="Stool" class="stool" id="stool5">
+            <img src="assets/stool.png" alt="Stool" class="stool" id="stool6">
         </div>
     </div>
 </body>

@@ -36,8 +36,9 @@ body {
     display: flex;
     flex-direction: row;
     position: absolute;
-    bottom: 130px;
-    gap:10px;
+    bottom: 110px;
+    gap:20px;
+    z-index: 6;
 }
 
 button {    
@@ -56,7 +57,26 @@ button {
     background-image: url('./assets/red_chip.jpg');
 }
 
-#shuffle-button{
+#flip-label{
+    position: relative;
+    top: 74%;
+    right: 2.5%;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+#display-label{
+    position: relative;
+    top: 65%;
+    left: 2.5%;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+
+#display-button{
     background-image: url('./assets/black_chip.jpg');
 }
 
@@ -81,7 +101,7 @@ button:active{
     height: 110px;
     width: 115px;
     /* margin-top: 200px; */
-    top: 40%;
+    top: 35%;
     left: 42%;
 }
 
@@ -103,28 +123,24 @@ button:active{
 
 .flip-card-inner {
     position: relative;
-    transition: transform 0.6s;
+    transition: transform 0.3s;
     transform-style: preserve-3d;
 }
 
-.flip-card.flip, .flip-card-inner {
+.flip-card.flip .flip-card-inner {
     transform: rotateY(180deg);
-}
-
-.flip-card-back, .flip-card-front {
-    position: relative;
-}
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
 
 .flip-card-back {
     position: absolute;
     transform: rotateY(180deg);
+    left: 113%;
 }
 
-/* 5 cards, laid out in a 5‑wide fan */
-.card.ani0 { left: 0px;     top: 0px;   }
-.card.ani1 { left: 30px;    top: -10px; }
-.card.ani2 { left: 60px;    top: -20px; }
-.card.ani3 { left: 90px;    top: -10px; }
-.card.ani4 { left: 120px;   top: 0px;   }
-
+#display-label a {
+    text-decoration: none; /* removes underline */
+    color: inherit;         /* inherits text color from parent */
+  }
   
