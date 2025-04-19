@@ -45,7 +45,6 @@ function flipCard() {
     let i = Math.floor(Math.random() * 53);
     let image = "./assets/cards/" + i + ".png";
     document.getElementById('cardss').src = image;
-    console.log("update");
     document.getElementById('flipCard').classList.toggle('flip');
 }
 
