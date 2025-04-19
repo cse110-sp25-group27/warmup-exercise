@@ -42,10 +42,10 @@ document.getElementById('flip-button').addEventListener('click', () =>{
 })
 
 function flipCard() {
-    let i = Math.floor(Math.random() * 53) + 1;
-    let image = "assets/cards/" + i + ".png";
-    const frontOfCard = document.getElementById('frontCard');
-    frontOfCard.src = image;
+    //let i = Math.floor(Math.random() * 53) + 1;
+    //let image = "assets/cards/" + i + ".png";
+    //const frontOfCard = document.getElementById('frontCard');
+    //frontOfCard.src = image;
     document.getElementById('flipCard').classList.toggle('flip');
 }
 
