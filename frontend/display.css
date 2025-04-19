@@ -76,8 +76,8 @@ body {
   }
   
   #display-label a {
-    text-decoration: none; /* removes underline */
-    color: inherit;         /* inherits text color from parent */
+    text-decoration: none; 
+    color: inherit;        
   }
 
 

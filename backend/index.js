@@ -56,7 +56,7 @@ document.getElementById('flip-button').addEventListener('click', () =>{
 function flipCard() {
     let i = Math.floor(Math.random() * 53); 
     const a = "assets/cards/";
-    const p = ".png;"
+    const p = ".png";
     let image = a + i + p;
     document.getElementById('cardss').src = image;
     console.log("update");
@@ -64,14 +64,14 @@ function flipCard() {
 }
 
 
-function resetCards() {
-    document.querySelectorAll('.card').forEach(c => {
-      c.classList.remove('open', 'opened');
-    });
-    stackCards(0.2);
-    closeAllCards();
-    animateCards(0);
-}
+// function resetCards() {
+//     document.querySelectorAll('.card').forEach(c => {
+//       c.classList.remove('open', 'opened');
+//     });
+//     stackCards(0.2);
+//     closeAllCards();
+//     animateCards(0);
+// }
 
   function shuffleCards() {
     // reorder the DOM
