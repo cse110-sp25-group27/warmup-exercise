@@ -25,18 +25,6 @@ function loadOrderedDeck() {
     }
 }
 
-/**
- * Picks a random card from the cards folder where the cards are named "card1.png" to "card52.png"
- * 
- * @returns A randomly picked card
- */
-function pickRandomCard() {
-    //Picks a random number from 1-52
-    let i = Math.floor(Math.random() * 52) 
-
-    // Returns the corresponding card
-    document.getElementById('card').src = "assets/cards/card" + i + ".png";
-}
 
 window.onload = () => {
     loadOrderedDeck();  //load cards in order
@@ -53,12 +41,15 @@ document.getElementById('flip-button').addEventListener('click', () =>{
     }
 })
 
-function flipCard() {
+function randomCard() {
     let i = Math.floor(Math.random() * 53); 
     const a = "assets/cards/";
     const p = ".png";
     let image = a + i + p;
     document.getElementById('cardss').src = image;
+}
+
+function flipCard() {
     console.log("update");
     document.getElementById('flipCard').classList.toggle('flip');
 }
