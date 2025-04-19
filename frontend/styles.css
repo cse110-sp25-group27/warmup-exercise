@@ -32,8 +32,11 @@ body {
     width: 80vw;
 }
 
-.stools{
-    top:80%;
+#stools{
+    position: absolute;
+    display: flex;
+
+    top:10%;
 }
 
 #buttons-container {
