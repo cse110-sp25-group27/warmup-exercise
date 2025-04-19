@@ -37,13 +37,13 @@ document.getElementById('flip-button').addEventListener('click', () =>{
     if(isCurrentlyBack){
         topCard.src = cards[0]; 
     } else{
-        topCard.src = "assets/cards/cardBack.png"; 
+        topCard.src = "frontend/assets/cards/cardBack.png"; 
     }
 })
 
 function flipCard() {
     let i = Math.floor(Math.random() * 53) + 1;
-    let image = "./assets/cards/" + i + ".png";
+    let image = "./frontend/assets/cards/" + i + ".png";
     document.getElementById('cardss').src = image;
     document.getElementById('flipCard').classList.toggle('flip');
 }
