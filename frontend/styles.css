@@ -38,8 +38,8 @@ body {
     height: 200px;
     width: 200px;
     bottom:83%;
-    left: -14%;
-    gap:40px;
+    left: -12%;
+    gap:60px;
 }
 
 #stool1{
@@ -55,7 +55,7 @@ body {
 }
 
 #stool6{
-    transform: translate(-50px, 200px) rotate(70deg);
+    transform: translate(-75px, 200px) rotate(70deg);
     
 }
 
