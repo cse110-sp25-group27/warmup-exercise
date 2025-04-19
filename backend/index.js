@@ -41,15 +41,10 @@ document.getElementById('flip-button').addEventListener('click', () =>{
     }
 })
 
-function randomCard() {
-    let i = Math.floor(Math.random() * 53); 
-    const a = "assets/cards/";
-    const p = ".png";
-    let image = a + i + p;
-    document.getElementById('cardss').src = image;
-}
-
 function flipCard() {
+    let i = Math.floor(Math.random() * 53);
+    let image = "./assets/cards/" + i + ".png";
+    document.getElementById('cardss').src = image;
     console.log("update");
     document.getElementById('flipCard').classList.toggle('flip');
 }

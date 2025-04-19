@@ -8,11 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       return arr;
     }
-<<<<<<< HEAD
-=======
   
     // Create [1, 2, ..., 53] and shuffle it, then add 53 again to get 54 images (joker)
->>>>>>> d880bf0a4b6f43405b7b582313ec0efa195d1013
     const imageIndices = shuffleArray([...Array(53).keys()].map(i => i + 1));
     imageIndices.push(53); 
   
