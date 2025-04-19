@@ -21,7 +21,7 @@ let cards = [];
 function loadOrderedDeck() {
     cards = [];
     for (let i = 1; i <= 52; i++) {
-        cards.push("assets/cards/card" + i + ".png");
+        cards.push("frontend/assets/cards/card" + i + ".png");
     }
 }
 
