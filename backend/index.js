@@ -28,7 +28,7 @@ function loadOrderedDeck() {
 
 window.onload = () => {
   loadOrderedDeck();  //load cards in order
-  shuffleDeck();       //shuffle them
+  // shuffleDeck();       //shuffle them
 };
 
 document.getElementById('flip-button').addEventListener('click', () =>{
@@ -58,35 +58,35 @@ function flipCard() {
 //     animateCards(0);
 // }
 
-function shuffleCards() {
-  // reorder the DOM
-  const tablecards = Array.from(document.querySelectorAll('.card'));
+// function shuffleCards() {
+//   // reorder the DOM
+//   const tablecards = Array.from(document.querySelectorAll('.card'));
 
-  let delay = 0;
-  const shufflePasses = 5;
-  let pass = 0;
-  let zIndexCounter = 1;
+//   let delay = 0;
+//   const shufflePasses = 5;
+//   let pass = 0;
+//   let zIndexCounter = 1;
 
-  // reverse order so top‑stacked cards animate first
-  tablecards.slice().reverse().forEach(card => {
-    if (pass++ > shufflePasses) return;
+//   // reverse order so top‑stacked cards animate first
+//   tablecards.slice().reverse().forEach(card => {
+//     if (pass++ > shufflePasses) return;
 
-    setTimeout(() => {
-      // push it out…
-      card.style.marginRight = '145px';
+//     setTimeout(() => {
+//       // push it out…
+//       card.style.marginRight = '145px';
 
-      setTimeout(() => {
-        // bump its z‑index and pull it back
-        card.style.zIndex = zIndexCounter++;
-        card.style.marginLeft = '0px';
-      }, 100);
+//       setTimeout(() => {
+//         // bump its z‑index and pull it back
+//         card.style.zIndex = zIndexCounter++;
+//         card.style.marginLeft = '0px';
+//       }, 100);
 
-    }, delay);
+//     }, delay);
 
-    delay += 600;
-  });
+//     delay += 600;
+//   });
 
-}
+// }
 
 function stackCards() {
   document.querySelectorAll('.card').forEach((card, i) => {
