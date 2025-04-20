@@ -45,8 +45,8 @@ function flipCard() {
     let i = Math.floor(Math.random() * 53) + 1;
     //let frontOfCard = document.getElementById('frontCard');
     //frontOfCard.src = `assets/cards/${i}.png`;
-    const fcard = document.getElementById('cardss).src; 
-    if (fcard != "cardBack.png") {
+    const fcard = document.getElementById('cardss').src; 
+    if (fcard == "cardBack.png") {
         document.getElementById('cardss').src = `./assets/cards/${i}.png`;
     }
     document.getElementById('flipCard').classList.toggle('flip');
