@@ -41,12 +41,12 @@ document.getElementById('flip-button').addEventListener('click', () =>{
     }
 })
 
-function flipCard() {
-    let i = Math.floor(Math.random() * 53) + 1;
-    let frontOfCard = document.getElementById('frontCard');
-    frontOfCard.src = `assets/cards/${i}.png`;
-    document.getElementById('flipCard').classList.toggle('flip');
-}
+//function flipCard() {
+    //let i = Math.floor(Math.random() * 53) + 1;
+    //let frontOfCard = document.getElementById('frontCard');
+    //frontOfCard.src = `assets/cards/${i}.png`;
+    //document.getElementById('flipCard').classList.toggle('flip');
+//}
 
 
 // function resetCards() {
