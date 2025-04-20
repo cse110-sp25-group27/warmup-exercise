@@ -35,7 +35,7 @@ document.getElementById('flip-button').addEventListener('click', () =>{
   const topCard = document.querySelector('.top-card'); 
   let isCurrentlyBack = topCard.src.includes("cardBack.png");
   if(isCurrentlyBack){
-      topCard.src = cards[0]; 
+      topCard.src = cards.at(-1); 
   } else{
       topCard.src = "assets/cards/cardBack.png"; 
   }
