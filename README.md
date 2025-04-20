@@ -9,6 +9,9 @@
 ## SWOT Analysis
 - [Analysis Doc](https://github.com/cse110-sp25-group27/cse110-sp25-group27/blob/main/admin/adr/SWOT_analysis.pdf)
 
+## Demo Video
+- ![Demo video](https://youtu.be/8ZBBT9tMAtk)
+
 ## Goals
 1. Card Deck and Playing Card Web Components complete with animation of flip and/or shuffle (HTML, CSS, and very light JS)
 2. Dealing with the deck, complete with an ability to pull the cards one or multiple at a time and state management of the deck (more JS + some simple web APIs) 
