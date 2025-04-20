@@ -10,7 +10,7 @@
 - [Analysis Doc](https://github.com/cse110-sp25-group27/cse110-sp25-group27/blob/main/admin/adr/SWOT_analysis.pdf)
 
 ## Demo Video
-- ![Demo video](https://youtu.be/8ZBBT9tMAtk)
+- [Demo video](https://youtu.be/8ZBBT9tMAtk)
 
 ## Goals
 1. Card Deck and Playing Card Web Components complete with animation of flip and/or shuffle (HTML, CSS, and very light JS)
