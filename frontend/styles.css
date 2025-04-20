@@ -166,11 +166,6 @@ button:active{
     transform: rotateY(180deg);
   }
 
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    backface-visibility: hidden;
-}
-
 .flip-card-back {
     position: absolute;
     transform: rotateY(180deg);
