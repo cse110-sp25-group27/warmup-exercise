@@ -167,8 +167,7 @@ button:active{
   }
 
 .flip-card-front, .flip-card-back {
-  position: absolute;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
