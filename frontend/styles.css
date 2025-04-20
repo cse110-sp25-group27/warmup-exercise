@@ -35,34 +35,27 @@ body {
 .stools{
     position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 20vh;
-    width: 20vw;
-
-    /*
     height: 200px;
     width: 200px;
-    */
-    bottom:85%;
-    /*left: -12%;*/
-    gap: 20%;
+    bottom:83%;
+    left: -12%;
+    gap:60px;
 }
 
 #stool1{
-    transform: translate(0%, 80%) rotate(-55deg);
+    transform: translate(75px, 200px) rotate(-70deg);
 }
 
 #stool2{
-    transform: translate(0%, 9%)rotate(-11deg);
+    transform: translate(-10px, 30px) rotate(-30deg);
 }
 
 #stool5{
-    transform: translate(0%, 9%) rotate(11deg);
+    transform: translate(10px, 30px) rotate(30deg);
 }
 
 #stool6{
-    transform: translate(0%, 80%) rotate(55deg);
+    transform: translate(-75px, 200px) rotate(70deg);
     
 }
 
